@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Banco Ficticio - Gestión de Préstamos</title>
+</head>
+<body>
+  <header>
+    <h1>Banco Ficticio - Gestión de Préstamos</h1>
+  </header>
+
+  <div class="container">
+    <h2>Buscar Deudores</h2>
+    <input type="text" id="searchInput" placeholder="Ingrese apellido">
+    <ul id="resultsList"></ul>
+  </div>
+
+  <div class="container">
+    <h2>Registrar Deudor</h2>
+    <form id="registerForm">
+      <input type="text" id="nameInput" placeholder="Nombre" required>
+      <input type="text" id="lastNameInput" placeholder="Apellido" required>
+      <input type="number" id="debtInput" placeholder="Deuda" required>
+      <button type="submit">Registrar</button>
+    </form>
+    <p id="successMessage"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
